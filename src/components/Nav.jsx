@@ -1,5 +1,5 @@
 import React from "react";
-import "./Nav.css";
+import "../css/Nav.css";
 function Nav() {
   return (
     <nav className="Nav">
