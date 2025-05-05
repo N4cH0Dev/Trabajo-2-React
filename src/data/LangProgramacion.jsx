@@ -52,7 +52,21 @@ const LangProgramacion = () => {
       descripcion: "Lenguaje moderno de Android.",
     },
   ];
-  return <></>;
+  return (
+    <>
+      <div className="cards">
+        {lenguajes.map((leng) => (
+          <Card className="cardImagen" key={leng.id}>
+            <Card.Img variant="top" src={leng.imagen} />
+            <Card.Body>
+              <Card.Title>{leng.nombre}</Card.Title>
+            </Card.Body>
+          </Card>
+        ))}
+      </div>
+      ;
+    </>
+  );
 };
 
 export default LangProgramacion;

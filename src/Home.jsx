@@ -2,12 +2,13 @@ import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainHome from "./components/MainHome";
+import LangProgramacion from "./data/LangProgramacion";
 
-const Home = () => {
+const Home = (LangProgramacion) => {
   return (
     <>
       <Header />
-      <MainHome />
+      <MainHome LangProgramacion={LangProgramacion} />
       <Footer />
     </>
   );
