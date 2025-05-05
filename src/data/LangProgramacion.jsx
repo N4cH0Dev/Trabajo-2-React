@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 
 const LangProgramacion = () => {
   const lenguajes = [
@@ -20,7 +22,12 @@ const LangProgramacion = () => {
       imagen: "",
       descripcion: "Lenguaje de propósito general.",
     },
-    { id: 4, nombre: "C#", imagen: "", descripcion: "Lenguaje de Microsoft." },
+    {
+      id: 4,
+      nombre: "C#",
+      imagen: "",
+      descripcion: "Lenguaje de Microsoft.",
+    },
     {
       id: 5,
       nombre: "PHP",
@@ -52,20 +59,23 @@ const LangProgramacion = () => {
       descripcion: "Lenguaje moderno de Android.",
     },
   ];
+
   return (
-    <>
-      <div className="cards">
-        {lenguajes.map((leng) => (
-          <Card className="cardImagen" key={leng.id}>
-            <Card.Img variant="top" src={leng.imagen} />
-            <Card.Body>
-              <Card.Title>{leng.nombre}</Card.Title>
-            </Card.Body>
-          </Card>
-        ))}
-      </div>
-      ;
-    </>
+    <CardGroup className="cards" style={{ flexWrap: "wrap", gap: "1rem" }}>
+      {lenguajes.map((leng) => (
+        <Card className="cardImagen" key={leng.id} style={{ width: "18rem" }}>
+          <Card.Img
+            variant="top"
+            src={leng.imagen || "https://via.placeholder.com/150"}
+            alt={leng.nombre}
+          />
+          <Card.Body>
+            <Card.Title>{leng.nombre}</Card.Title>
+            <Card.Text>{leng.descripcion}</Card.Text>
+          </Card.Body>
+        </Card>
+      ))}
+    </CardGroup>
   );
 };
 
