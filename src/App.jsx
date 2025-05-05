@@ -1,17 +1,30 @@
 // src/App.js
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
-import MainHome from "./components/MainHome";
 import Footer from "./components/Footer";
+import MainHome from "./components/MainHome";
+import FrtUtn from "./pages/FrtUtn";
+import Nosotros from "./pages/Nosotros";
 import LangProgramacion from "./data/LangProgramacion";
 import "./css/style.css";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MainHome lenguajes={LangProgramacion} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<MainHome lenguajes={LangProgramacion} />} />
+          <Route path="/frtutn" element={<FrtUtn />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
