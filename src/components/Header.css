@@ -1,0 +1,13 @@
+.header {
+    background-image: url("https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg");
+    padding: 20px;
+    text-align: center;
+  }
+  .Titulo{
+    color: blue;
+    text-shadow: 2px 2px white;
+  }
+  .Subtitulo{
+    color: blue;
+    text-shadow: 2px 2px white;
+  }
