@@ -1,15 +1,23 @@
+// src/components/Footer.js
 import React from "react";
-import Map from "./Map";
-import "../css/Footer.css";
-const Footer = () => {
+
+function Footer() {
   return (
-    <>
-      <footer className="footer">
-        <h3 className="titulofooter">FRT UTN 2025</h3>
-        <Map />
-      </footer>
-    </>
+    <footer>
+      <h3>FRT UTN</h3>
+      <div id="map">
+        {/* Insertar un iframe con el mapa */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </footer>
   );
-};
+}
 
 export default Footer;

@@ -1,19 +1,16 @@
+// src/components/Aside.js
 import React from "react";
+
 function Aside() {
   return (
-    <aside
-      style={{ width: "25%", border: "3px solid purple", padding: "10px" }}
-    >
-      <h2>Información</h2>
+    <aside style={{ width: "25%" }}>
+      <h3>Lenguajes de Programación</h3>
       <p>
-        Esta SPA fue creada en React para mostrar lenguajes de programación.
+        Los lenguajes de programación son herramientas fundamentales para
+        desarrollar aplicaciones y sistemas informáticos.
       </p>
-      <img
-        src="https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif"
-        width="100%"
-        alt="gif"
-      />
     </aside>
   );
 }
+
 export default Aside;

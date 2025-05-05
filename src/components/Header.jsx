@@ -1,14 +1,13 @@
+// src/components/Header.js
 import React from "react";
-import "../css/Header.css";
 
-const Header = () => {
+function Header() {
   return (
-    <div className="header">
-      <h1 className="Titulo">Trabajo Practico N2</h1>
-      <br />
-      <h4 className="Subtitulo">Comision-2 Grupo 10</h4>
-    </div>
+    <header>
+      <h1>Trabajo Practico N2</h1>
+      <h2>Comisión: 123 - Grupo: 456</h2>
+    </header>
   );
-};
+}
 
 export default Header;
