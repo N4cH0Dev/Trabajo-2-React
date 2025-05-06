@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainHome from "./components/MainHome";
-import FrtUtn from "./pages/FrtUtn";
+
 import Nosotros from "./pages/Nosotros";
 import LangProgramacion from "./data/LangProgramacion";
 
@@ -18,7 +18,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<MainHome lenguajes={LangProgramacion} />} />
-          <Route path="/frtutn" element={<FrtUtn />} />
+          <Route to="https://frt.utn.edu.ar/" />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
 
