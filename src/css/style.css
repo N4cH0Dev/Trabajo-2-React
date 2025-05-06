@@ -137,9 +137,10 @@ tr:hover {
   background-color: #f1f1f1;
 }
 footer {
-  background-color: #f5f5f5;
-  padding: 20px;
+  background-image: url(https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-5-lenguajes-de-programacion-basicos.jpg);
+  padding: 10vb;
   text-align: center;
+  text-shadow: 2px 2px #ddd;
 }
 
 #map {
