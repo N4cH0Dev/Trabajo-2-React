@@ -1,7 +1,11 @@
 import React from "react";
-
+import ArticleAlumno from "../components/ArticleAlumno";
 const Nosotros = () => {
-  return <div>Nosotros</div>;
+  return (
+    <>
+      <ArticleAlumno />
+    </>
+  );
 };
 
 export default Nosotros;

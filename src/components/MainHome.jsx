@@ -1,4 +1,3 @@
-// src/components/MainHome.js
 import React from "react";
 import Aside from "./Aside";
 import Article from "./Article";
@@ -7,8 +6,10 @@ import LangTable from "./LangTable";
 function MainHome({ lenguajes }) {
   return (
     <main>
-      <Aside />
-      <Article lenguajes={lenguajes} />
+      <div className="main-content">
+        <Aside />
+        <Article lenguajes={lenguajes} />
+      </div>
       <LangTable lenguajes={lenguajes} />
     </main>
   );

@@ -1,14 +1,17 @@
-// src/components/Article.js
 import React from "react";
+import "../css/Style.css";
 
 function Article({ lenguajes }) {
   return (
-    <article style={{ width: "70%" }}>
+    <article className="article-container">
       {lenguajes.map((lenguaje, index) => (
         <div key={index} className="card">
-          {lenguaje.imagen}
+          <img
+            src={lenguaje.imagen}
+            alt={lenguaje.nombre}
+            className="card-image"
+          />
           <h4>{lenguaje.nombre}</h4>
-          <p>{lenguaje.descripcion}</p>
         </div>
       ))}
     </article>

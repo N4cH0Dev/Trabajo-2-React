@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import React from "react";
 
 function Footer() {
@@ -6,9 +5,9 @@ function Footer() {
     <footer>
       <h3>FRT UTN</h3>
       <div id="map">
-        {/* Insertar un iframe con el mapa */}
+        {/* Insertar mapa */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=..."
+          src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-5-lenguajes-de-programacion-basicos.jpg"
           width="100%"
           height="300"
           style={{ border: 0 }}

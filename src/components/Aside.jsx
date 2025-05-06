@@ -1,4 +1,3 @@
-// src/components/Aside.js
 import React from "react";
 
 function Aside() {
@@ -6,8 +5,10 @@ function Aside() {
     <aside style={{ width: "25%" }}>
       <h3>Lenguajes de Programación</h3>
       <p>
-        Los lenguajes de programación son herramientas fundamentales para
-        desarrollar aplicaciones y sistemas informáticos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ut
+        earum ad obcaecati incidunt voluptatibus, et nam reiciendis repellendus
+        voluptates sapiente in quaerat ducimus hic facere saepe ipsum error
+        atque.
       </p>
     </aside>
   );
