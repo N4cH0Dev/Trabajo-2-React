@@ -6,7 +6,7 @@ function Header() {
     <>
       <header>
         <h1>Trabajo Practico N2</h1>
-        <h2>Comisión: 123 - Grupo: 456</h2>
+        <h2>Comisión: 2 - Grupo: 13</h2>
         <nav>
           <Link to="/">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
