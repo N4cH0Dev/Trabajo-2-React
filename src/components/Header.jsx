@@ -10,7 +10,9 @@ function Header() {
         <nav>
           <Link to="/">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
-          <Link to="/frtutn">FRT UTN</Link>
+          <Link to="https://frt.utn.edu.ar/" target="_blank">
+            FRT UTN
+          </Link>
         </nav>
       </header>
     </>
