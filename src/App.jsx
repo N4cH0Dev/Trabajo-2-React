@@ -7,7 +7,6 @@ import MainHome from "./components/MainHome";
 import FrtUtn from "./pages/FrtUtn";
 import Nosotros from "./pages/Nosotros";
 import LangProgramacion from "./data/LangProgramacion";
-import LangAlumnos from "./data/LangAlumnos";
 
 import "./css/Style.css";
 
@@ -20,10 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainHome lenguajes={LangProgramacion} />} />
           <Route path="/frtutn" element={<FrtUtn />} />
-          <Route
-            path="/nosotros"
-            element={<Nosotros alumnos={LangAlumnos} />}
-          />
+          <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
 
         <Footer />
