@@ -7,6 +7,7 @@ import MainHome from "./components/MainHome";
 
 import Nosotros from "./pages/Nosotros";
 import LangProgramacion from "./data/LangProgramacion";
+import LangAlumnos from "./data/LangAlumnos";
 
 import "./css/Style.css";
 
@@ -19,7 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<MainHome lenguajes={LangProgramacion} />} />
           <Route to="https://frt.utn.edu.ar/" />
-          <Route path="/nosotros" element={<Nosotros />} />
+          <Route
+            path="/nosotros"
+            element={<Nosotros LangAlumnos={LangAlumnos} />}
+          />
         </Routes>
 
         <Footer />
